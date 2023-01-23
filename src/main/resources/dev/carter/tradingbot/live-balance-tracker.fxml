@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane stylesheets="@style.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dev.carter.tradingbot.userinterface.LiveBalanceController">
+         <children>
+            <LineChart fx:id="graph" prefWidth="500.0" style="-fx-background-color: #171b26;" styleClass="whiteText" stylesheets="@style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <xAxis>
+                <CategoryAxis fx:id="time" side="BOTTOM" style="-fx-font-color: white;" tickLabelFill="WHITE" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="balance" side="LEFT" style="-fx-font-color: white;" tickLabelFill="WHITE" />
+              </yAxis>
+            </LineChart>
+            <Label fx:id="balanceLabel" layoutX="348.0" layoutY="6.0" maxHeight="50.0" prefHeight="30.0" prefWidth="145.0" style="-fx-background-color: transparent;" textAlignment="CENTER" textFill="WHITE" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Consolas" size="12.0" />
+         </font>
+            </Label>
+         </children>
+      </AnchorPane>
